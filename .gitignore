@@ -1,0 +1,28 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Private materials (DO NOT COMMIT)
+credentials/
+personal/
+private/
+backup/
+*.pdf
+resume.*
+linkedin.*
+
+# Secrets
+*.key
+*.pem
+passwords.txt
+recovery-phrase.txt
+
+# OS
+.DS_Store
+Thumbs.db
