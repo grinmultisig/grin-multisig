@@ -1,23 +1,38 @@
-# Grin MultiSig Implementation
+# Grin MultiSig Research Project
 
-> Building MuSig2/FROST wallet-layer multisig for Grin
+> **⚠️ ACADEMIC RESEARCH PROJECT ⚠️**
+>
+> This is an **open-source research and educational project** exploring cryptographic protocols.
+> **NOT a commercial product. NOT seeking funding. NOT for production use.**
 
-## 🚧 Status
+## 🎓 Project Status
 
-**Proposal Stage** - Seeking community funding
+**Research & Development** - Open-source community contribution
+
+**⚠️ READ [NOTICE](./NOTICE) FILE BEFORE PROCEEDING**
 
 ## What is This?
 
-A comprehensive multisig implementation for Grin wallet using:
+An **academic research project** exploring multi-signature cryptographic protocols for the Grin cryptocurrency:
+
 - **MuSig2**: N-of-N Schnorr signature aggregation
-- **FROST**: Flexible t-of-n threshold signatures
+- **FROST**: Flexible t-of-n threshold signatures (future research)
 
-## Why?
+### Research Goals
 
-Grin currently lacks multisig functionality, which blocks critical use cases:
-- 🔒 **OTC Escrow**: Secure peer-to-peer trading
-- 🏦 **Institutional Custody**: M-of-N security for funds
-- 🏛️ **Community Governance**: Secure multisig for community funds
+1. **Study** how Schnorr signature aggregation can be adapted to MimbleWimble
+2. **Implement** proof-of-concept code for educational purposes
+3. **Document** technical challenges and design decisions
+4. **Share** findings with the cryptography and Grin communities
+
+### Motivation
+
+From a **technical curiosity perspective**:
+- MuSig2 + MimbleWimble is cryptographically elegant
+- Privacy-preserving multisig is an interesting research topic
+- Hands-on implementation aids understanding of advanced cryptography
+
+This is **NOT** driven by commercial interests - purely educational and technical learning.
 
 ## Technical Approach
 
@@ -46,48 +61,128 @@ Grin Wallet
 - [Architecture Design](./docs/architecture-draft.md) - Coming soon
 
 🔬 **Proof of Concept**
-- [MuSig2 Simple Demo](./poc/musig2_simple.rs) - Work in progress
+- [MuSig2 Rust Implementation](./poc/) - Complete working demo with:
+  - Key aggregation with coefficient computation
+  - Two-round nonce commitment protocol
+  - Type-safe API design
+  - Comprehensive test coverage
+  - Full documentation
+
+**Quick Start**:
+```bash
+cd poc
+cargo run              # Run the demonstration
+cargo test             # Run all tests
+cargo doc --open       # View API documentation
+```
 
 💬 **Community**
-- [Funding Proposal](https://forum.grin.mw/...) - Coming soon
-- [Original Discussion](https://forum.grin.mw/t/funding-proposal-grin-multisig/11837)
+- [Grin Forum Discussion](https://forum.grin.mw) - Technical discussions welcome
+- Open to collaboration with other researchers
 
-## Roadmap
+## Research Roadmap
 
-### Milestone 1: Foundation (Month 1-2)
-- [ ] RFC document with detailed specification
-- [ ] Core cryptographic libraries (MuSig2 + FROST)
-- [ ] Comprehensive test suite
+**Note**: This is a **volunteer project** with **no fixed timeline**. Progress depends on available free time.
 
-### Milestone 2: Integration (Month 3-4)
-- [ ] Extend Grin Slate for multisig coordination
-- [ ] Wallet API implementation
-- [ ] Nonce management and security hardening
+### Phase 1: Core Concepts (Completed)
+- [x] MuSig2 proof-of-concept implementation
+- [x] Comprehensive test suite (7 unit tests + documentation tests)
+- [x] Using production `grin_secp256k1zkp` library
+- [x] Type-safe Rust implementation
 
-### Milestone 3: Production (Month 5-6)
-- [ ] CLI interface and documentation
-- [ ] Security audit preparation
-- [ ] Real-world testing with community
+### Phase 2: Refinement (In Progress)
+- [ ] Community feedback incorporation
+- [ ] Expand test coverage and edge cases
+- [ ] Technical documentation and tutorials
+- [ ] Code review and improvements
+
+### Phase 3: Advanced Research (Future, Optional)
+- [ ] Study wallet integration challenges
+- [ ] Explore Slatepack format extensions
+- [ ] Investigate FROST threshold signatures
+- [ ] Security analysis and threat modeling
+
+**Disclaimer**: No guarantee of completion. This is educational work done in spare time.
 
 ## Get Involved
 
-This project will be developed fully in the open. Contributions welcome!
+This is **open-source academic research** - peer review and collaboration welcome!
 
-**Stay Updated**:
-- ⭐ Star this repo for updates
-- 💬 Join discussion on [Grin Forum](https://forum.grin.mw)
-- 🔑 Reach out on Keybase: [@grinmultisig](https://keybase.io/grinmultisig)
+### How to Contribute
 
-## Contact
+**For Researchers & Students**:
+- 📖 Review the code and provide technical feedback
+- 🐛 Test the implementation and report bugs
+- 💡 Suggest improvements or alternative approaches
+- 📚 Help improve documentation
 
-- **Email**: grin.multisig@proton.me
-- **Keybase**: @grinmultisig
-- **Forum**: @grinmultisig
+**For Cryptographers**:
+- 🔍 Security analysis and threat modeling
+- 📝 Review cryptographic correctness
+- 💬 Discuss implementation trade-offs
 
-## License
+**For Grin Developers**:
+- 🔧 Feedback on integration strategy
+- 🤝 Collaborate on wallet architecture
+- 🎓 Share knowledge about Grin internals
 
-Apache 2.0 (same as Grin)
+**Note**: This is **volunteer work**. No payments, no commitments - just knowledge sharing.
+
+### Stay Updated
+
+- ⭐ Star this repo to follow progress
+- 📢 Watch for releases and updates
+- 💬 Open GitHub issues for technical discussion
 
 ---
 
-_Built with ❤️ for the Grin community_
+## Disclaimer & Legal
+
+**⚠️ IMPORTANT - READ BEFORE USE**
+
+This project is provided **"AS IS"** for **educational and research purposes ONLY**.
+
+- **NOT production-ready** - Has NOT been security audited
+- **NOT for real funds** - Use ONLY on testnets with test coins
+- **NO WARRANTIES** - Authors assume NO LIABILITY for any damages
+- **Legal compliance** - Users responsible for their jurisdiction's laws
+- **NOT financial advice** - This is NOT an endorsement of any cryptocurrency
+
+See [NOTICE](./NOTICE) file and [poc/README.md](./poc/README.md) for full disclaimer.
+
+**By using this code, you agree to all terms.**
+
+---
+
+## Contact
+
+**For technical discussions ONLY** (not support):
+- **Email**: grin.multisig@proton.me
+- **GitHub Issues**: [Project Issues](../../issues)
+
+Responses provided on voluntary, best-effort basis.
+
+---
+
+## License
+
+**Apache License 2.0** - Open source for research and educational use.
+
+See [LICENSE](./LICENSE) file for full terms.
+
+---
+
+## Acknowledgments
+
+This research builds upon:
+- [MuSig2 Paper](https://eprint.iacr.org/2020/1261) by Nick, Ruffing, Seurin
+- [Grin Project](https://github.com/mimblewimble/grin) - MimbleWimble implementation
+- [secp256k1-zkp](https://github.com/mimblewimble/rust-secp256k1-zkp) - Cryptographic library
+
+**Thank you** to the Grin community and open-source cryptography researchers.
+
+---
+
+**Last Updated**: January 2, 2026
+
+_Academic research contribution to privacy-preserving cryptography_

@@ -1,0 +1,62 @@
+ACADEMIC RESEARCH PROJECT - IMPORTANT NOTICE
+============================================
+
+This repository contains RESEARCH and EDUCATIONAL code only.
+
+⚠️ WARNING ⚠️
+
+This is NOT production-ready software.
+This is NOT a commercial product or service.
+This is NOT financial advice or investment guidance.
+
+PURPOSE
+-------
+This project is part of academic research into cryptographic protocols,
+specifically studying Schnorr signature aggregation (MuSig2) within the
+MimbleWimble framework.
+
+INTENDED USE
+------------
+- Educational study of cryptographic protocols
+- Academic research and peer review
+- Technical learning and skill development
+- Open-source collaboration
+
+NOT INTENDED FOR
+----------------
+- Production use with real cryptocurrency funds
+- Commercial applications or services
+- Financial transactions or asset management
+- Any use involving real monetary value
+
+LEGAL DISCLAIMER
+----------------
+By accessing this code, you acknowledge:
+
+1. This code is provided "AS IS" without any warranties
+2. The authors assume NO LIABILITY for any damages or losses
+3. Users are responsible for compliance with their local laws
+4. Cryptocurrency regulations vary by jurisdiction
+5. This is NOT financial advice or an endorsement of any cryptocurrency
+
+TESTING ONLY
+------------
+If you experiment with this code:
+- Use ONLY on cryptocurrency testnets (NEVER mainnet)
+- Use ONLY test funds with no real value
+- Understand all risks before proceeding
+
+SECURITY
+--------
+This code has NOT undergone professional security audit.
+Do NOT assume it is cryptographically secure.
+Do NOT use it to protect anything of value.
+
+CONTACT
+-------
+Technical discussions only: grin.multisig@proton.me
+This is NOT a support channel.
+
+For full disclaimer, see: poc/README.md
+
+Last Updated: January 2, 2026
